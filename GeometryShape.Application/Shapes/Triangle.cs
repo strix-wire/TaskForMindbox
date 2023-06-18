@@ -1,5 +1,4 @@
-﻿using System;
-using GeometryShape.Application.Exceptions;
+﻿using GeometryShape.Application.Exceptions;
 using GeometryShape.Application.Interfaces;
 
 namespace GeometryShape.Application.Shapes;
@@ -38,6 +37,18 @@ public class Triangle : IShape
 
         if (!IsCanExist(sideA, sideB, sideC))
             throw new InvalidTriangleException("Invalid triangle side.");
+    }
+
+    public bool IsRightTriangle()
+    {
+        double[] sides = { _sideA, _sideB, _sideC };
+        Array.Sort(sides);
+
+        double aSquared = Math.Pow(sides[0], 2);
+        double bSquared = Math.Pow(sides[1], 2);
+        double cSquared = Math.Pow(sides[2], 2);
+
+        return Math.Abs(cSquared - (aSquared + bSquared)) < double.Epsilon;
     }
 
     /// <summary>
