@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1705.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapeLib", "GeometryShapeLib\GeometryShapeLib.csproj", "{4EC733FF-EB2A-44D8-9580-9C1FAB8F16B6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A9627285-A122-47EC-8506-97359BCD2FDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{29D40049-0A6E-4B58-AA92-FBAB5141B271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShape.Application", "GeometryShape.Application\GeometryShape.Application.csproj", "{E2A7AF20-8736-42CB-A746-76B751F31C21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{060E2E64-4F28-4145-B55C-D77099DA109B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShape.Tests.UnitTests", "GeometryShape.Tests.UnitTests\GeometryShape.Tests.UnitTests.csproj", "{0C8360DD-9A6E-411F-B00C-F4E3A7711FC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +19,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4EC733FF-EB2A-44D8-9580-9C1FAB8F16B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EC733FF-EB2A-44D8-9580-9C1FAB8F16B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EC733FF-EB2A-44D8-9580-9C1FAB8F16B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EC733FF-EB2A-44D8-9580-9C1FAB8F16B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A7AF20-8736-42CB-A746-76B751F31C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A7AF20-8736-42CB-A746-76B751F31C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A7AF20-8736-42CB-A746-76B751F31C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A7AF20-8736-42CB-A746-76B751F31C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8360DD-9A6E-411F-B00C-F4E3A7711FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8360DD-9A6E-411F-B00C-F4E3A7711FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8360DD-9A6E-411F-B00C-F4E3A7711FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8360DD-9A6E-411F-B00C-F4E3A7711FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6A5FFF2-E6CC-4EF8-BC11-DB0F9035169E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2A7AF20-8736-42CB-A746-76B751F31C21} = {A9627285-A122-47EC-8506-97359BCD2FDD}
+		{0C8360DD-9A6E-411F-B00C-F4E3A7711FC2} = {060E2E64-4F28-4145-B55C-D77099DA109B}
 	EndGlobalSection
 EndGlobal
